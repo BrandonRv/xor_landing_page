@@ -1,5 +1,6 @@
 <script setup>
 // No necesitamos importar HelloWorld para esta página
+import '@fortawesome/fontawesome-free/css/all.css';
 </script>
 
 <template>
@@ -10,6 +11,16 @@
     </div>
     <p>Estamos trabajando para traerte algo increíble.</p>
     <p>¡Vuelve pronto!</p>
+    <footer class="social-footer">
+      <div class="social-links">
+        <a href="https://www.instagram.com/xortechnology/profilecard/?igsh=MTkwOHpiNDA5azhwaA==" target="_blank" class="social-link"> 
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/brandon-rivera-179a2bb6/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -41,6 +52,27 @@ p {
   color: #cdcccc;
   font-size: 1.2rem;
   margin: 0.5rem 0;
+}
+
+.social-footer {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #cdcccc;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #646cff;
 }
 
 @keyframes bounce {
